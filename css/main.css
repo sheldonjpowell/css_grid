@@ -5,3 +5,33 @@
     grid-template-columns: 50px 100px auto 100px 50px;
     grid-template-rows: 100px 100px 100px;
 }
+
+.container{
+    display: grid;
+    border:1px solid black ;
+    height: 100vh;
+    grid-template-columns:1fr 1fr 2fr 1fr 1fr ;
+    grid-template-rows: 100px 100px auto 100px;
+    grid-template-areas:
+    "nav nav nav nav nav"
+    "side main main main ads"
+    "side main main main ads"
+    "side main main main ." ;
+    justify-items: center;
+    align-items: center;
+}
+.nav{
+    grid-area: nav;
+   
+}
+
+.main{
+    grid-area: main;
+    
+}
+.side{
+    grid-area: side;
+}
+.ads{
+    grid-area: ads;
+}
